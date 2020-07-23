@@ -30,10 +30,10 @@
         return '|';
     }
 
-    /*function themeDocumentTitlePart($title){
+    function themeDocumentTitlePart($title){
         $title['demo'] = 'salut';
         return $title;
-    }*/
+    }
 
     add_action('after_setup_theme', 'App\theme_support');
 
@@ -44,4 +44,4 @@
 
     add_filter('document_title_separator', 'App\themeTitleSeparator');
 
-    //add_filter('document_title_parts', 'App\themeDocumentTitlePart');
+    add_filter('document_title_parts', 'App\themeDocumentTitlePart');
